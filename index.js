@@ -157,6 +157,8 @@ Sua tarefa é escrever duas funções
 a) Escreva uma arrow function que recebe um parâmetro e imprime no console esse parâmetro
 */
 const nomeCompleto = (nome,sobrenome) => {
-    return nome + ' '+sobrenome;
+    nome1 = (nome +' '+sobrenome);
+    return nome1;
 }
-console.log()
+nomeCompleto();
+console.log(nomeCompleto("je", "schmidt"));
