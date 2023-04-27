@@ -57,15 +57,15 @@ Ela deve retornar uma string que unifique todas as informações da pessoa em um
 mensagem com o template:
 Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
 */
-function dados(){
+function infos(){
     let nome = prompt("Digite seu nome:");
-    let idade = prompt("Digite sua idade:");
+    let idade = Number(prompt("Digite sua idade:"));
     let cidade = prompt("Informe sua cidade:");
     let profissao = prompt("Informe sua profissão:");
     let template = ("Eu sou "+nome+", tenho "+idade+" anos, moro em "+cidade+" e sou "+profissao);
     return template;
 }
-console.log(dados());
+console.log(infos());
 
 /*2. Escreva as funções explicadas abaixo:
     a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, 
@@ -81,26 +81,34 @@ console.log("Você tem R$ " + saldo);
   /*  b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número
      é **maior ou igual** ao segundo.*/
 function maiorMenor(a,b){
-    if (a>=b){
+    return a>=b;
+    
+    /*if (a>=b){
         return (a+" é maior que "+ b);
     }else{
         return (a+" é menor que "+ b);
-    }
+    }*/
 } 
-console.log(maiorMenor(5,6));
-console.log(maiorMenor(8,4));
+alert(maiorMenor(Number(5), Number(6)));
+alert(maiorMenor(Number(8), Number(4)));
+
+//console.log(maiorMenor(Number(5), Number(6)));
+//console.log(maiorMenor(Number(8), Number(4)));
     
    /* c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
    */
-function parImpar(c){
-    if (c%2===0){
+function ePar(c){
+    return c%2===0;
+    /*if (c%2===0){
         return (c +" é um número par");
     }else{
         return (c +" é um número ímpar");
-    }
+    }*/
 }
-console.log(parImpar(8));
-console.log(parImpar(7));
+alert(ePar(6));
+alert(ePar(7));
+//console.log(ePar(8));
+//console.log(ePar(7));
 
    /* d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem,
      juntamente com uma versão dela em letras maiúsculas.
@@ -156,9 +164,17 @@ através de invocações/chamadas. Então, funções podem chamar/invocar outras
 Sua tarefa é escrever duas funções
 a) Escreva uma arrow function que recebe um parâmetro e imprime no console esse parâmetro
 */
-const nomeCompleto = (nome,sobrenome) => {
-    nome1 = (nome +' '+sobrenome);
-    return nome1;
+const nomeCompleto = (meuNome) => {
+     return meuNome;
 }
-nomeCompleto();
-console.log(nomeCompleto("je", "schmidt"));
+console.log(nomeCompleto('Jéssica'));
+
+/*b) Escreva outra arrow function que recebe dois valores como parâmetros mas nenhum retorno. 
+Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
+*/
+const valores = (n1,n2) => {
+    return n1 + n2;
+}
+let som = valores(2,3);
+console.log(som);
+
