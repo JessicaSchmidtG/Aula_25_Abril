@@ -5,14 +5,14 @@ function minhaFuncao(variavel) {
 
 console.log(minhaFuncao(2))
 console.log(minhaFuncao(10))
-*/
+
 //a) O que vai ser impresso no console?
 //vai ser impresso no console o número 10 e o número 50.
 
 //b) O que aconteceria se retirasse os dois `console.log` e simplesmente invocasse a 
 //função `minhaFuncao(2)` e `minhaFuncao(10)`? O que apareceria no console?
 //A função seria executada porém não iria imprimir nada no console.
-
+*/
 /*2) Leia o código abaixo
 let textoDoUsuario = prompt("Insira um texto");
 
@@ -22,7 +22,7 @@ const outraFuncao = function(texto) {
 
 const resposta = outraFuncao(textoDoUsuario)
 console.log(resposta)
-*/
+
 //a) Explique o que essa função faz e qual é sua utilidade
 //Esta função faz o texto que for passado como parâmetro ficar em letra minúscula e 
 //verifica se a palavra cenoura está incluida nele, e retorna este texto editado para a variavél
@@ -36,27 +36,29 @@ console.log(resposta)
     //cenoura é bom pra vista, true
 //iii. Cenouras crescem na terra
     //cenouras crescem na terra, false
-
+*/
     // Exercícios de escrita de código
 
-/* 1. Escreva as funções explicadas abaixo:
+/*1. Escreva as funções explicadas abaixo:
     a) A função não deve receber nenhum 
     parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como:
     "Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
 Troque o nome, idade, cidade e se é estudante ou não por informações sobre você. 
 Lembrando que a função não possui entradas, apenas imprime essa mensagem.
-*/
+
+
 let meusDados = function(){
     return ("Eu sou Jéssica,tenho 30 anos, moro em São Leopoldo e sou estudante");
 }
 console.log(meusDados());
 
-/*b)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de 
+b)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de 
 uma pessoa: o nome (string), a idade (number), a cidade (string) e uma profissão (string).
 Ela deve retornar uma string que unifique todas as informações da pessoa em uma só
 mensagem com o template:
 Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
-*/
+
+
 function infos(){
     let nome = prompt("Digite seu nome:");
     let idade = Number(prompt("Digite sua idade:"));
@@ -66,11 +68,11 @@ function infos(){
     return template;
 }
 console.log(infos());
-
+*/
 /*2. Escreva as funções explicadas abaixo:
     a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, 
     faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
-*/
+
 function soma(valorPoup,valorSal){
     let caixa = valorPoup+valorSal
     return caixa
@@ -78,54 +80,54 @@ function soma(valorPoup,valorSal){
 let saldo = soma(157.50,1302.00);
 console.log("Você tem R$ " + saldo);
 
-  /*  b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número
-     é **maior ou igual** ao segundo.*/
+   b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número
+     é **maior ou igual** ao segundo.
 function maiorMenor(a,b){
     return a>=b;
     
-    /*if (a>=b){
+    if (a>=b){
         return (a+" é maior que "+ b);
     }else{
         return (a+" é menor que "+ b);
-    }*/
+    }
 } 
-alert(maiorMenor(Number(5), Number(6)));
-alert(maiorMenor(Number(8), Number(4)));
+//alert(maiorMenor(Number(5), Number(6)));
+//alert(maiorMenor(Number(8), Number(4)));
 
 //console.log(maiorMenor(Number(5), Number(6)));
 //console.log(maiorMenor(Number(8), Number(4)));
     
-   /* c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
-   */
+   c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
+   
 function ePar(c){
     return c%2===0;
-    /*if (c%2===0){
+    if (c%2===0){
         return (c +" é um número par");
     }else{
         return (c +" é um número ímpar");
-    }*/
-}
-alert(ePar(6));
-alert(ePar(7));
+    }
+
+//alert(ePar(6));
+//alert(ePar(7));
 //console.log(ePar(8));
 //console.log(ePar(7));
 
-   /* d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem,
+    d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem,
      juntamente com uma versão dela em letras maiúsculas.
-*/
+
 function mensagem(texto){
     return texto.toUpperCase() + ' - tamanho: ' + texto.length;
   
 }
 
 console.log(mensagem('Olá tudo bem'));
-
+*/
 /* 3. Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão).
 Em seguida, peça para o usuário inserir dois números e **chame** essas 4 funções com esses valores inputados
 pelo usuário sendo o argumento. Por fim, mostre no console o resultado das operações:
-*/
-let d = parseInt(prompt("Informe um número:"));
-let e = parseInt(prompt("Informe outro número:"));
+
+//let d = parseInt(prompt("Informe um número:"));
+//let e = parseInt(prompt("Informe outro número:"));
 
 function somar(d,e){
     let resultSoma = d+e;
@@ -144,7 +146,7 @@ function divisao(d,e){
     return resultDivisao;
 }
 
-console.log("Números inseridos: "+d+" e "+e );
+//console.log("Números inseridos: "+d+" e "+e );
 resposta1 = somar(d,e)
 console.log("Soma: "+resposta1);
 
@@ -156,25 +158,38 @@ console.log("Multiplicação: "+resposta3);
 
 resposta4 = divisao(d,e);
 console.log("Divisão: "+resposta4);
-
+*/
 // DESAFIOS
-
-/*Funções são trechos de códigos como quaisquer outros mas que podemos acessá-los mais de uma vez ao longo do código 
+/*
+Funções são trechos de códigos como quaisquer outros mas que podemos acessá-los mais de uma vez ao longo do código 
 através de invocações/chamadas. Então, funções podem chamar/invocar outras funções também.
 Sua tarefa é escrever duas funções
 a) Escreva uma arrow function que recebe um parâmetro e imprime no console esse parâmetro
-*/
-const nomeCompleto = (meuNome) => {
-     return meuNome;
-}
-console.log(nomeCompleto('Jéssica'));
 
-/*b) Escreva outra arrow function que recebe dois valores como parâmetros mas nenhum retorno. 
-Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
-*/
-const valores = (n1,n2) => {
-    return n1 + n2;
-}
-let som = valores(2,3);
-console.log(som);
 
+let desafioA = (conteudo) => {
+    return conteudo;
+}
+//console.log(desafioA('Jéssica'));
+
+//b) Escreva outra arrow function que recebe dois valores como parâmetros mas nenhum retorno. 
+//Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
+
+let desafioB = (n1,n2) => {
+    let somaNum = (n1 + n2);
+    alert(somaNum);
+    desafioA(somaNum);
+    alert(desafioA(somaNum));
+    
+}
+desafioB(2,7);
+alert(desafioA(desafioB(somaNum)));
+*/
+
+/*Faça uma função que execute o teorema de Pitágoras, recebendo dois catetos e calculando o valor da hipotenusa. 
+Retorne este valor, invoque a função e imprima o resultado no console. 
+*/
+//function pitagoras(a,b,c){
+  //  return (a^2 + 
+
+//}
